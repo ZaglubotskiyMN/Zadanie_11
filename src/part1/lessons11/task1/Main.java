@@ -1,13 +1,13 @@
 package part1.lessons11.task1;
 
-import com.sun.source.tree.CaseTree;
-
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main extends documents{
 
 
    public static void main(String[] args) {
+       String[] doc =new String[10];
        char a;
        int b;
        String c1;
@@ -22,10 +22,10 @@ public class Main extends documents{
              b=sc.nextInt();
              System.out.print("Введите описание договора :");
              c1=sc.next();
-             System.out.printf("Ваши данные- договор номер %d, описание -%s",b,c1);
-             System.out.print("Записываю данные");
-
-
+             System.out.printf("Ваши данные- договор номер %d, описание -%s \n",b,c1);
+             System.out.print("Записываю данные \n");
+             doc[1]= String.valueOf(new dogovor(b,"Договор",c1));
+             System.out.print(Arrays.toString(doc));
              break;
 
           case 'b':

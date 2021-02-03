@@ -3,8 +3,8 @@ package part1.lessons11.task1;
 class dogovor extends documents {
     private int number;
     private String type;
-    private String info;
-    dogovor(int number,String type,String info) {
+    private Object info;
+    dogovor(int number,String type,Object info) {
         super();
         this.setNumber(number);
         this.setType(type);
@@ -28,11 +28,11 @@ class dogovor extends documents {
         this.type = type;
     }
 
-    public String getInfo() {
+    public Object getInfo() {
         return info;
     }
 
-    public void setInfo(String info) {
+    public void setInfo(Object info) {
         this.info = info;
     }
 }
