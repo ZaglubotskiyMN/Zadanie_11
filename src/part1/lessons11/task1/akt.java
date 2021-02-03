@@ -1,15 +1,15 @@
 package part1.lessons11.task1;
 
-class akt extends documents {
-private int number;
-private String type;
-private Object info;
-akt(int number,String type,Object info){
-    super();
-    this.setNumber(number);
-    this.setType(type);
-    this.setInfo(info);
-}
+class akt {
+    private int number;
+    private String type;
+    private Object info;
+
+    akt(int number, String type, Object info) {
+        this.setNumber(number);
+        this.setType(type);
+        this.setInfo(info);
+    }
 
     public int getNumber() {
         return number;
@@ -33,5 +33,11 @@ akt(int number,String type,Object info){
 
     public void setInfo(Object info) {
         this.info = info;
+    }
+
+
+
+    public String toString() {
+        return this.number + ","  + this.type + ","  + this.info;
     }
 }
