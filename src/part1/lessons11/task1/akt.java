@@ -3,8 +3,8 @@ package part1.lessons11.task1;
 class akt extends documents {
 private int number;
 private String type;
-private String info;
-akt(int number,String type,String info){
+private Object info;
+akt(int number,String type,Object info){
     super();
     this.setNumber(number);
     this.setType(type);
@@ -27,11 +27,11 @@ akt(int number,String type,String info){
         this.type = type;
     }
 
-    public String getInfo() {
+    public Object getInfo() {
         return info;
     }
 
-    public void setInfo(String info) {
+    public void setInfo(Object info) {
         this.info = info;
     }
 }

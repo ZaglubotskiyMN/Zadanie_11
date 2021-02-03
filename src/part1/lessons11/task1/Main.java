@@ -33,8 +33,9 @@ public class Main extends documents{
              f=sc.nextInt();
              System.out.print("Введите описание договора :");
              j1=sc.next();
-             System.out.printf("Ваши данные- договор номер %d, описание -%s",f,j1);
-             System.out.print("Записываю данные");
+             System.out.printf("Ваши данные- договор номер %d, описание -%s \n",f,j1);
+             System.out.print("Записываю данные \n");
+             doc[0]=String.valueOf(new akt(f,"Акт",j1));
              break;
           default:
              System.out.print("Programm finished");
