@@ -41,7 +41,7 @@ public class Main {
                    System.out.print("Записываю данные \n");
                    doc[i]= new akt(f,"Акт",j1);
                    //doc[i] = (new akt(f, "Акт", j1)).toString();
-                   System.out.print(doc[i]+"\n");
+                   System.out.print(doc[i].toString()+"\n");
                    i++;
                    System.out.print("Введите тип документа (a-Договор/b-Акт/q-Выход/s-Всего):");
                    break;
