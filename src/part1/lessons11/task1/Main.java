@@ -7,7 +7,8 @@ public class Main {
 
 
    public static void main(String[] args) {
-       String[] doc =new String[2];
+       //String[] doc =new String[2];
+       documents[] doc=new documents[5];
        char a;
        int b,f;
        int i = 0;
@@ -25,8 +26,9 @@ public class Main {
                    c1 = sc.next();
                    System.out.printf("Ваши данные- договор номер %d, описание -%s \n", b, c1);
                    System.out.print("Записываю данные \n");
-                   doc[i] = (new dogovor(b, "Договор", c1)).toString();
-                   System.out.print(doc[i]+"\n");
+                   doc[i]=new dogovor(b,"Договор",c1);
+                   //doc[i] = (new dogovor(b, "Договор", c1)).toString();
+                   System.out.print(doc[i].toString()+"\n");
                    i++;
                    System.out.print("Введите тип документа (a-Договор/b-Акт/q-Выход/s-Всего):");
                    break;
@@ -37,7 +39,8 @@ public class Main {
                    j1 = sc.next();
                    System.out.printf("Ваши данные- договор номер %d, описание -%s \n", f, j1);
                    System.out.print("Записываю данные \n");
-                   doc[i] = (new akt(f, "Акт", j1)).toString();
+                   doc[i]= new akt(f,"Акт",j1);
+                   //doc[i] = (new akt(f, "Акт", j1)).toString();
                    System.out.print(doc[i]+"\n");
                    i++;
                    System.out.print("Введите тип документа (a-Договор/b-Акт/q-Выход/s-Всего):");

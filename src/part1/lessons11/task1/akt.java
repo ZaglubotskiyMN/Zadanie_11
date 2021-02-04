@@ -1,11 +1,12 @@
 package part1.lessons11.task1;
 
-class akt {
+class akt extends documents {
     private int number;
     private String type;
     private Object info;
 
     akt(int number, String type, Object info) {
+        super();
         this.setNumber(number);
         this.setType(type);
         this.setInfo(info);

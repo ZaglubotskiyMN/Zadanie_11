@@ -1,10 +1,11 @@
 package part1.lessons11.task1;
 
-class dogovor  {
+class dogovor extends documents  {
     private int number;
     private String type;
     private Object info;
     dogovor(int number,String type,Object info) {
+        super();
         this.setNumber(number);
         this.setType(type);
         this.setInfo(info);
